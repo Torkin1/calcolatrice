@@ -1,6 +1,6 @@
  <?eclipse.ant.import?>
  
- <project basedir="." default="build" name="calcolatrice">
+ <project>
  
     <target name="test" >
 
