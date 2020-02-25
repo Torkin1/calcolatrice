@@ -2,11 +2,9 @@
  
  <project>
     <target name="test" >
-        <mkdir dir="${junit.output.dir}"/>
         <junit printsummary="yes" haltonfailure="yes">
             <classpath refid="calcolatrice.classpath"/>
             <formatter type="xml"/>
-            <batchtest fork="yes" todir="${junit.output.dir}">
                 <fileset dir="bin/test">
                 <include name="**/*Test*.java"/>
                 </fileset>
