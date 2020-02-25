@@ -12,9 +12,10 @@ addons:
 before-install:
         - sudo apt-get update -q
         - sudo apt-get install ant-optional
+        - sudo apt-get install ant-junit
         - sudo apt-get install openjfx -y
 script:
-        - ant build test
+        - ant -v build test
         - sonar-scanner
 
 
