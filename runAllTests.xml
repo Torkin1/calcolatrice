@@ -2,15 +2,16 @@
  
  <project>
     <target name="test" >
+        <mkdir dir="junit"/>
         <junit printsummary="yes" haltonfailure="yes">
             <classpath refid="calcolatrice.classpath"/>
             <formatter type="xml"/>
-            <batchtest>
+            <batchtest fork="yes" todir="junit">
                 <fileset dir="bin/test">
-                    <include name="**/*Test*"/>
+                    <include name="**/*Test*.java"/>
                 </fileset>
             </batchtest>
-            <formatter type="brief" usefile="false"/>
+            <formatter type="xml"/>
         </junit>
     </target>
 </project>
