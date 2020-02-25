@@ -7,7 +7,7 @@
             <formatter type="xml"/>
             <batchtest>
                 <fileset dir="bin/test">
-                <include name="**/*Test*.java"/>
+                    <include name="**/*Test*"/>
                 </fileset>
             </batchtest>
         </junit>
