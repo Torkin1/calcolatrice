@@ -7,11 +7,7 @@
         <mkdir dir="${reports.tests}"/>
 
         <junit printsummary="yes" haltonfailure="yes">
-        <classpath>
-            <pathelement location="${project.class.path}"/>
-            <pathelement location="${build.tests}"/>
-            <pathelement path="${java.class.path}"/>
-        </classpath>
+        <classpath refid="calcolatrice.classpath"/>
 
         <formatter type="plain"/>
         <formatter type="xml"/>
