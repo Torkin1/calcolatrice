@@ -13,13 +13,12 @@
         <formatter type="xml"/>
 
         <batchtest fork="yes" todir="${reports.tests}">
-            <fileset dir="${src.test}">
+            <fileset dir="src/test">
             <include name="**/*Test*.java"/>
             </fileset>
         </batchtest>
 
         </junit>
-        <antcall target="junitreport"/>
         
     </target>
 </project>
