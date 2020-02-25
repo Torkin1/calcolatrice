@@ -10,6 +10,7 @@
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.8"/>
     <property name="source" value="1.8"/>
+    <import file="runAllTests.xml"/>
     <path id="calcolatrice.classpath">
         <pathelement location="bin"/>
         <pathelement location="libs/junit-4.12.jar"/>
