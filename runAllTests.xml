@@ -4,19 +4,17 @@
  
     <target name="test" >
 
-        <mkdir dir="${reports.tests}"/>
+        <mkdir dir="${junit.output.dir}"/>
 
         <junit printsummary="yes" haltonfailure="yes">
-        <classpath refid="calcolatrice.classpath"/>
-
-        <formatter type="plain"/>
-        <formatter type="xml"/>
-
-        <batchtest fork="yes" todir="${reports.tests}">
-            <fileset dir="src/test">
-            <include name="**/*Test*.java"/>
-            </fileset>
-        </batchtest>
+            <classpath refid="calcolatrice.classpath"/>
+            <formatter type="xml"/>
+            <jvmarg line="-ea"/>
+            <batchtest fork="yes" todir="${junit.output.dir}">
+                <fileset dir="src/test">
+                <include name="**/*Test*.java"/>
+                </fileset>
+            </batchtest>
 
         </junit>
         
