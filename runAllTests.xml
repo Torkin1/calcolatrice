@@ -1,25 +1,29 @@
  <?eclipse.ant.import?>
- <target name="test" >
+ 
+ <project basedir="." default="build" name="calcolatrice">
+ 
+    <target name="test" >
 
-    <mkdir dir="${reports.tests}"/>
+        <mkdir dir="${reports.tests}"/>
 
-    <junit printsummary="yes" haltonfailure="yes">
-      <classpath>
-        <pathelement location="${project.class.path}"/>
-        <pathelement location="${build.tests}"/>
-        <pathelement path="${java.class.path}"/>
-      </classpath>
+        <junit printsummary="yes" haltonfailure="yes">
+        <classpath>
+            <pathelement location="${project.class.path}"/>
+            <pathelement location="${build.tests}"/>
+            <pathelement path="${java.class.path}"/>
+        </classpath>
 
-      <formatter type="plain"/>
-      <formatter type="xml"/>
+        <formatter type="plain"/>
+        <formatter type="xml"/>
 
-      <batchtest fork="yes" todir="${reports.tests}">
-        <fileset dir="${src.test}">
-          <include name="**/*Test*.java"/>
-        </fileset>
-      </batchtest>
+        <batchtest fork="yes" todir="${reports.tests}">
+            <fileset dir="${src.test}">
+            <include name="**/*Test*.java"/>
+            </fileset>
+        </batchtest>
 
-    </junit>
-    <antcall target="junitreport"/>
-    
-</target>
+        </junit>
+        <antcall target="junitreport"/>
+        
+    </target>
+</project>
