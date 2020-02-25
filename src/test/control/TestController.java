@@ -11,6 +11,6 @@ public class TestController {
 		int first = 4;
 		int second = 5;
 		
-		Assert.assertEquals(Controller.getReference().doAdd(first, second), first + second, 0.1);
+		Assert.assertEquals(Controller.getReference().doAdd(first, second), first - second, 0.1);
 	}
 }
