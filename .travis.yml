@@ -14,6 +14,7 @@ before-install:
         - sudo apt-get install openjfx -y
 script:
         - ant build
+        - ant junitreport
         - sonar-scanner
 
 
