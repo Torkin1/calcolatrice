@@ -11,10 +11,9 @@ addons:
                         openjdk-8-jre-headless
 before-install:
         - sudo apt-get update -q
-        - sudo apt-get install ant-optional
-        - sudo apt-get install openjfx -y
+        - sudo apt-get install ant-optional openjfx -y
 script:
-        - ant -v build test
+        - ant -v -d build test
         - sonar-scanner
 
 

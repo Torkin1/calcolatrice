@@ -12,6 +12,5 @@
                 </fileset>
             </batchtest>
         </junit>
-        <antcall target="junitreport"/>
     </target>
 </project>
