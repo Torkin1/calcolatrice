@@ -5,6 +5,7 @@
         <junit printsummary="yes" haltonfailure="yes">
             <classpath refid="calcolatrice.classpath"/>
             <formatter type="xml"/>
+            <batchtest>
                 <fileset dir="bin/test">
                 <include name="**/*Test*.java"/>
                 </fileset>
