@@ -13,7 +13,8 @@ before-install:
         - sudo apt-get update -q
         - sudo apt-get install ant-optional openjfx -y
 script:
-        - ant -v -d build test
+        - ant -v build test
         - sonar-scanner
+        - firefox coverage/index.html
 
 
