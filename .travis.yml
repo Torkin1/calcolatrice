@@ -4,8 +4,7 @@ jdk:
 addons:
         sonarcloud:
                 organization: torkin1
-                token:
-                        secure: 22c4183d1843a915e7ce6bd5baf5fb2d60c98fdc
+                token: 22c4183d1843a915e7ce6bd5baf5fb2d60c98fdc
         apt:
                 packages:
                         openjdk-8-jre-headless
