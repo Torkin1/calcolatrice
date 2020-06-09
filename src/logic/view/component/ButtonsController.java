@@ -30,6 +30,7 @@ public class ButtonsController {
 	@FXML private Button bMul;
 	@FXML private Button bDiv;
 	@FXML private Button bEq;
+	@FXML private Button bSqrt;
 	
 	@FXML private void bOneHandler(Event event) {
 		logger.log(Level.INFO, "button " + ((Button)event.getSource()).getText() + " fired");
@@ -109,6 +110,11 @@ public class ButtonsController {
 	@FXML private void bEqHandler(ActionEvent event) {
 		logger.log(Level.INFO, "button " + ((Button)event.getSource()).getText() + " fired");
 		Context.getReference().onEqButtonClick();
+		event.consume();
+	}
+	@FXML private void bSqrtHandler(ActionEvent event) {
+		logger.log(Level.INFO, "button " + ((Button)event.getSource()).getText() + " fired");
+		Context.getReference().onSqrtButtonClick();
 		event.consume();
 	}
 	

@@ -53,6 +53,10 @@ public class Context {
 		current.onDivButtonClick();
 	}
 	
+	public void onSqrtButtonClick() {
+		current.onSqrtButtonClick();
+	}
+	
 	public void goNext() {
 		this.current.goNext();
 	}

@@ -44,4 +44,10 @@ public class OnError extends State {
 
 	}
 
+	@Override
+	public void onSqrtButtonClick() {
+		return;
+		
+	}
+
 }

@@ -5,10 +5,12 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.HBox?>
 
-<fx:root maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="143.0" prefWidth="130.0" type="GridPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.view.component.ButtonsController">
+<fx:root maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="128.0" prefWidth="203.0" type="GridPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.view.component.ButtonsController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
   </columnConstraints>
@@ -31,9 +33,10 @@
       <Button fx:id="bZero" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#bZeroHandler" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
       <Button fx:id="bCanc" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#bCancHandler" text="C" GridPane.rowIndex="3" />
       <Button fx:id="bEq" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#bEqHandler" text="=" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-      <Button fx:id="bAdd" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#bAddHandler" text="+" GridPane.columnIndex="3" />
+      <Button fx:id="bAdd" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#bAddHandler" prefHeight="36.0" prefWidth="0.0" text="+" GridPane.columnIndex="3" />
       <Button fx:id="bSub" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#bSubHandler" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1" />
       <Button fx:id="bMul" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#bMulHandler" text="*" GridPane.columnIndex="3" GridPane.rowIndex="2" />
       <Button fx:id="bDiv" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#bDivHandler" text="/" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <Button fx:id="bSqrt" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#bSqrtHandler" prefHeight="32.0" prefWidth="70.0" text="sqrt" GridPane.columnIndex="4" GridPane.columnSpan="2" />
    </children>
 </fx:root>

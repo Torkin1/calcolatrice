@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 
 import logic.view.Starter;
 
-public class OnNoOp extends State {
+public class OnNoOp extends OnOp {
 
 	private final Logger logger = Logger.getLogger(this.getClass().getName());
 	
@@ -28,33 +28,35 @@ public class OnNoOp extends State {
 	@Override
 	public void onAddButtonClick() {
 		Controller.getReference().setPrevNumber(Controller.getReference().getNumber());
-		this.next = new OnAdd();
-		Context.getReference().goNext();
+		super.onAddButtonClick();
 		
 	}
 
 	@Override
 	public void onSubButtonClick() {
 		Controller.getReference().setPrevNumber(Controller.getReference().getNumber());
-		this.next = new OnSub();
-		Context.getReference().goNext();
+		super.onSubButtonClick();
 		
 	}
 
 	@Override
 	public void onMulButtonClick() {
 		Controller.getReference().setPrevNumber(Controller.getReference().getNumber());
-		this.next = new OnMul();
-		Context.getReference().goNext();
+		super.onMulButtonClick();
 		
 	}
 
 	@Override
 	public void onDivButtonClick() {
 		Controller.getReference().setPrevNumber(Controller.getReference().getNumber());
-		this.next = new OnDiv();
-		Context.getReference().goNext();
+		super.onDivButtonClick();
 		
+	}
+
+	@Override
+	public void onSqrtButtonClick() {
+		Controller.getReference().setPrevNumber(Controller.getReference().getNumber());
+		super.onSqrtButtonClick();
 	}
 
 	

@@ -17,7 +17,6 @@ public class DisplayComponent extends ViewComponent {
 		try (FileInputStream src = new FileInputStream("src/logic/view/component/Display.fxml")){
 			displayLoader.load(src);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			return null;
 		} 

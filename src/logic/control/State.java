@@ -2,8 +2,7 @@ package logic.control;
 
 public abstract class State {
 	
-	protected State next;
-	
+	protected State next;	
 	public void goNext() {
 		Context.getReference().setCurrent(next);
 	}
@@ -14,10 +13,11 @@ public abstract class State {
 		Context.getReference().goNext();
 
 	}
-	public abstract void onNumButtonClick(NumButtons b);
-	public abstract void onEqButtonClick();
 	public abstract void onAddButtonClick();
 	public abstract void onSubButtonClick();
 	public abstract void onMulButtonClick();
 	public abstract void onDivButtonClick();
+	public abstract void onSqrtButtonClick();
+	public abstract void onEqButtonClick();
+	public abstract void onNumButtonClick(NumButtons b);
 }
